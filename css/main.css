@@ -146,6 +146,9 @@ header nav ul {
 
 /*--------------------------- FOOTER ------------------------------*/
 footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   flex-direction: column;
 }
 
@@ -155,12 +158,13 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center; */
   width: 55%;
-  margin: 50px 0;
 }
 
 footer .contact, 
 .social {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 
 }
 
@@ -197,9 +201,6 @@ footer .copyright {
   margin-left: 20px;
 }
 
-.header-image h1 {
-  padding: 50px 14px 0 0;
-}
 
 .form aside {
   display:flex;
@@ -291,7 +292,10 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /*margin: 50px 30px 50px 20px;*/
+}
+
+.about-contact-section h1 {
+  margin: 0;
 }
 
 /*--------------------- FAQ PAGE --------------------------*/
@@ -421,6 +425,7 @@ footer .copyright {
 
   header .content-wrapper {
     justify-content: center;
+    flex-flow: row nowrap;
     /* width:  */
   }
 
@@ -462,7 +467,7 @@ footer .copyright {
      width:  
   } */
 
-/*---------------------- HOMEPAGE ---------------------*/
+/*---------------------- HOMEPAGE TABLET ---------------------*/
 
   .hero-area {
     display: flex;
@@ -483,11 +488,16 @@ footer .copyright {
     flex-flow: row nowrap;
   }
 
-  .form aside {
-    flex-basis: 320px;
+  .form aside, 
+  .form-input {
+    width: 320px;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .form aside h3 {
+    padding: 0;
   }
 
   .features .content-wrapper {
@@ -515,40 +525,49 @@ footer .copyright {
    display: flex;
  }
 
- .previous-retreats article {
-   width: 320px;
- }
+ 
 
  .review p {
    padding: 0;
  }
 
-  /*----------------- ABOUT -----------*/
-  
+  /*----------------- ABOUT TABLET-----------*/
+  .mission {
+    margin: 0;
+  }
+
   .mission-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
  
+  .mission .content-wrapper h1 {
+    width: 600px;
+  }
+
   .mission-content p {
     width: 300px;
   }
 
-  .about-contact-section .content-wrapper h2 {
-    width: 640px;
-  }
-
-  .about-contact-section .content-wrapper {
+  .about-contact-section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    /*flex-flow: row wrap;*/
+    flex-flow: row wrap;
   }
 
+  .about-contact {
+    display: flex;
+    justify-content: flex-start;  /* or space between?*/
+    flex-flow: row wrap;
+  }
 
+  .contact-chat {
+    margin-left: 20px; /* if space between, no margin */
+  }
 
-  /*---------------- FAQ--------------*/
+  /*---------------- FAQ TABLET --------------*/
   .faq-content-wrapper {
     flex-basis: 83%;
   }
@@ -568,11 +587,26 @@ footer .copyright {
 
 
 @media only screen and (min-width: 1200px) {
-  /* --------------------- DESKTOP ----------------- */
-
-  .hero-area {
+/* --------------- DESKTOPS -------------------*/ 
+  .content-wrapper {
     width: 960px;
   }
+
+  header .content-wrapper {
+    width: 960px;
+    display: flex;
+    flex-flow: nowrap;
+  }
+
+  header nav {
+    width: 160px;
+  }
+
+  header nav ul {
+    width: 137px;
+  }
+ 
+  /* --------------------- DESKTOP ----------------- */
 
   .features .content-wrapper {
     width: 880px;
@@ -588,7 +622,21 @@ footer .copyright {
   }
 }
 
+/*------------------ ABOUT DESKTOP -------------------*/
 
+.about {
+  width: 960px;
+}
+
+.mission .content-wrapper h1 {
+  margin: 0;
+}
+
+.about-contact-section {
+  display: flex;
+  justify-content: center;
+}
+/*------------------- FAQ DESKTOP --------------------*/
 
 
 
