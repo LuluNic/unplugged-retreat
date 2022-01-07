@@ -94,11 +94,14 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 
 ul, 
 ol {
   list-style-type: none;
+  font-size: 1.125em;
+  font-weight: bold;
 
 }
 
@@ -112,25 +115,32 @@ a {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
+  font-weight: 400;
+  color: #e2e3ed;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 400;
+  color: #e2e3ed;
 }
 
 h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 400;
+  color: #e2e3ed;
 }
 
 p {
   font-size: .875em;
   line-height: 1em;
+  color: #e2e3ed;
 }
 
 img {
-
+  width: 220px;
 }
 
 figure {
@@ -139,29 +149,37 @@ figure {
 
 address {
   font-size: .875em;
+}
 
+.footer-content address {
+  text-align: center;
 }
 
 /* solution add */
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+  margin: 50px 20px;
 } 
 
 
 /*----------------------- Base Header - Footer Styles ----------------------*/
 header, 
 footer {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
+  background-size: cover;
 }   
 
 /*----------------------- HEADER ----------------------*/
 header {
   padding: 15px 0;
 }
+
+
 
 header .content-wrapper {
   display:flex;
@@ -171,16 +189,16 @@ header .content-wrapper {
   margin: 0;
 }
 
-.header-divider{
+.header-divider {
   width: 100%;
   /*solution add */
-  height: 1px;
   margin: 10px 0 20px 0;
+  border: 1px solid #3a3a3a;
 }
 
 header nav {
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
@@ -189,13 +207,16 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   /* remove - not part of solution align-items: center; */
   /* solution width 100% not 44% */
   width:45%;
   padding: 20px 0;
 }
 
+header nav ul li {
+  padding: 0 30px;
+}
 
 
 
@@ -247,20 +268,30 @@ footer .copyright {
 
 /*------------------- HOMEPAGE MAIN ------------------------*/
 
-.hero-area {
-  /* display:flex;
-  justify-content: center; */
-  /*not part of solution
-  align-items: center; 
-  flex-flow: row wrap;*/
+
+.header-image {
+  display:flex;
+  justify-content: center;
+  align-items: center; /* need to double check finished to see if this property is correct */
+}
+
+.header-image .content-wrapper {
+  margin: 50px 20px 50px 10px;
+}
+
+.form {
+  background-color: #527158;
+  background-size: cover;
+}
+
+.form .content-wrapper {
   width: 90%;
   margin-left: 20px;
 }
 
-
 .form aside {
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;   
 }
@@ -277,7 +308,6 @@ footer .copyright {
   display:flex;
   justify-content: center;
   align-items: center; /* need to double check finished to see if this property is correct */
-  width: 80%;
 }
 
 .features h2 {
@@ -290,10 +320,10 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0 60px;
 }
 
 .features article {
-  width: 160px;
   margin: 30px 0;
   text-align: center;
 }  
@@ -309,13 +339,13 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
+  background-color: #2a423a;
+  background-size: cover;
 }
 
-.previous-retreats h1 {
- padding: 20px 0; 
+.previous-retreats h2 {
+ padding: 0 30px 0 0; 
 }
-
 
 .previous-retreats h3 {
   width: 80%;
@@ -323,6 +353,7 @@ footer .copyright {
 
 .previous-retreats article p {
   padding: 50px 25px 30px 0;
+  line-height: 1.25em; /*PSD states 1em but doesn't look right*/
   }
 
 
@@ -334,8 +365,17 @@ footer .copyright {
   align-items: center;
   flex-flow: row wrap;
   /*margin: 50px 20px;*/
+  background-color: #527158;
 }
 
+.mission .content-wrapper {
+  margin: 50px 20px;
+}
+
+.mission .content-wrapper h2 {
+  line-height: 1.25em;
+  margin: 0;
+}
 .mission-content {
   display:flex;
   justify-content: center;
@@ -348,6 +388,11 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+}
+
+.about-contact-section .content-wrapper {
+  margin: 50px 20px;
 }
 
 .about-contact-section h1 {
@@ -355,12 +400,15 @@ footer .copyright {
 }
 
 /*--------------------- FAQ PAGE --------------------------*/
+
+
 .faq-main-section {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
+  background-color: #527158;
+  /*margin: 50px 0;*/
 }
 
 .faq-content-wrapper {
@@ -371,10 +419,50 @@ footer .copyright {
   margin: 20px;
 }
 
+.faq-main-section h2 {
+  font-size: 1.875em;
+  line-height: 1em;
+  font-weight: 400;
+}
+
+.faq-main-section h3 {
+  font-size: 1.125em;
+  line-height: 1.3125em;
+  font-weight: 400;
+}
+
 .question-section {
   /*flex-basis: 41%;*/
 }
 
+
+/*---------- Text styling for homepage input form --------- */
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 
@@ -468,9 +556,25 @@ footer .copyright {
 
 @media only screen and (min-width: 768px) {
   /* -----------------TABLETS ----------------------- */
+ h1 {
+   font-size: 3em;
+ }
+
+ h2 {
+   font-size: 2.25em;
+ }
+
+ h3 {
+   font-size: 1.5em;
+ }
+
+ p {
+   font-size: .875em;
+   line-height: 1em;
+   margin: 0;
+ }
 
  .content-wrapper {
-    /* width: 83%; INCORRECT */
     max-width: 640px;
     margin: 100px 0; /* why is this? */
   }
@@ -480,13 +584,13 @@ footer .copyright {
   }
 
   header .content-wrapper {
-    justify-content: center;
     flex-flow: row nowrap;
-    /* width:  */
   }
 
   header nav {
-    /* width:  */
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 120px;
   }
 
   header nav ul {
@@ -497,6 +601,12 @@ footer .copyright {
   header nav ul li {
     list-style-type: none;
     padding: 40px;
+  }
+
+  header nav ul li a {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   .header-divider { 
@@ -515,13 +625,16 @@ footer .copyright {
     flex-flow: row nowrap;
   }
 
-  footer .contact {
-    margin-bottom: 0;
+  footer .contact, 
+  footer .social {
+  display: block;
   }
 
- /* footer .copyright {
-     width:  
-  } */
+  footer .contact {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
 
 /*---------------------- HOMEPAGE TABLET ---------------------*/
 
@@ -531,16 +644,24 @@ footer .copyright {
     flex-flow: row wrap;
   }
 
-  .hero-area h1 {
-    width: 60%;
+  .header-image .content-wrapper {
+    width: 100%;
+  }
+
+  .header-image h1 {
+    margin-bottom: 420px;
+  }
+
+  .form {
+    width: 100%;
   }
 
   .form .content-wrapper {
     width: 640px;
     margin: 0;
-    /* padding: 50px; */
+    padding: 50px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-flow: row nowrap;
   }
 
@@ -554,17 +675,27 @@ footer .copyright {
 
   .form aside h3 {
     padding: 0;
+    margin: 0;
+  }
+
+  .form-input h3 {
+    margin: 0;
+  }
+
+  .form aside p {
+    width: 260px;
   }
 
   .features .content-wrapper {
   display: flex;
   flex-flow: column wrap;
+  width: 100%;
   }
 
-  .features-amentities {
-    width: 480px;
-    display: flex;
-    flex-wrap: wrap;
+  .features .features-amenities {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 0 90px;
   }
 
   .features article {
@@ -574,14 +705,22 @@ footer .copyright {
   }
 
  .previous-retreats .content-wrapper {
-   width: 480px; 
+    
  }
 
  .previous-retreats {
    display: flex;
  }
 
- 
+ .previous-retreats h2 {
+   padding: 0 90px 0 0;
+ }
+
+ .review {
+   width: 320px;
+   display: block;
+   margin-left: 380px;
+ }
 
  .review p {
    padding: 0;
@@ -596,10 +735,12 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 40px 0;
   }
  
-  .mission .content-wrapper h1 {
-    width: 600px;
+  .mission .content-wrapper h2 {
+    font-size: 2.25em;
+    padding-right: 20px;
   }
 
   .mission-content p {
@@ -613,9 +754,13 @@ footer .copyright {
     flex-flow: row wrap;
   }
 
+  .about-contact-section h2 {
+    padding-right: 40px;
+  }
+
   .about-contact {
     display: flex;
-    justify-content: flex-start;  /* or space between?*/
+    justify-content: space-between;  
     flex-flow: row wrap;
   }
 
@@ -625,27 +770,60 @@ footer .copyright {
 
   /*---------------- FAQ TABLET --------------*/
   .faq-content-wrapper {
-    flex-basis: 83%;
+    width: 640px;
+    justify-content: flex-start;
+    margin: 100px 0 100px 65px;
+  }
+
+  .faq-main-section {
+    justify-content: flex-start;
+  }
+
+  .faq-main-section h2 {
+    font-size: 2.25em;
+    line-height: 2.625em;
+    text-align: left;
+    margin: 0;
+  }
+
+  .faq-main-section h3 {
+    font-size: .875em;
+    line-height: 1em;
+    font-weight: 400;
   }
 
   .question-section {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 640px;
-    gap: 50px;
   }
 
   .question-section article {
-    flex-basis: 41%;
+    width: 320px;
   }
 
+  .question-section article p {
+    padding: 0 30px 0 0;
+  }
 }
 
 
 @media only screen and (min-width: 1200px) {
 /* --------------- DESKTOPS -------------------*/ 
+  h1 {
+  font-size: 3.75em;
+  }
+
+  h3 {
+  font-size: 1.875em;
+  }
+
+  p {
+  font-size: 1.125em;
+  line-height: 1.3125em;
+  }
+
   .content-wrapper {
-    width: 960px;
+    max-width: 960px;
   }
 
   header .content-wrapper {
@@ -654,47 +832,112 @@ footer .copyright {
     flex-flow: nowrap;
   }
 
-  header nav {
-    width: 160px;
-  }
-
-  header nav ul {
-    width: 137px;
-  }
- 
-  /* --------------------- DESKTOP ----------------- */
-
-  .features .content-wrapper {
-    width: 880px;
-  }
-
-  .features-amenities {
-    width: 800px;
+  img {
+    width: 285px;
   }
   
+ 
+  /* --------------------- HOMEPAGE DESKTOP ----------------- */
+
+  .header-image .content-wrapper h1 {
+    padding-right: 100px;
+  }
+
+  .form .content-wrapper {
+    width: 880px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 120px;
+  }
+
+  .form .content-wrapper aside h3 {
+    padding: 0;
+    margin:  0;
+  }
+
+  
   .features article {
-    margin: 20px;
+    width: 175px;
+    margin: 0;
     padding: 20px;
   }
-}
+
+  .previous-retreats article h2 {
+    padding: 0 0 95px 0;
+  }
+
+  .review {
+    width: 420px;
+    display: block;
+    margin-left: 500px;
+  }
 
 /*------------------ ABOUT DESKTOP -------------------*/
 
-.about {
-  width: 960px;
+/*h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+}*/
+
+.about-contact-section h2 {
+  line-height: 3.75em;
 }
 
-.mission .content-wrapper h1 {
-  margin: 0;
+/*h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}*/
+
+.mission .content-wrapper h2 {
+  font-size: 3em;
+  padding-right: 40px;
+}
+
+.mission-content p {
+  width: 440px;
+}
+
+.hero-area {
+  width: 100%;
 }
 
 .about-contact-section {
   display: flex;
   justify-content: center;
 }
+
+.contact-general {
+  margin-right: 80px;
+}
+
+.contact-chat {
+  margin-left: 80px;
+}
+
 /*------------------- FAQ DESKTOP --------------------*/
 
+.faq-content-wrapper {
+  width: 960px;
+}
 
+.faq-main-section h2 {
+  font-size: 3em;
+  line-height: 2.375em;
+}
+
+.faq-main-section h3 {
+  font-size: 1.125em;
+  line-height: 1em;
+}
+
+.question-section article {
+  width: 480px;
+}
+
+.question-section article p {
+  padding: 0 30px 0 0;
+}
 
 
 
