@@ -29,9 +29,13 @@
 
   <!-- Add your site or application content here -->
   <header>
-    <section class ="navigation">
+    <section class ="navigation"> <!--unneccessary section-->
       <div class="content-wrapper">
-        <a href="#"><img src="/Users/laurennicotera/SKILLCRUSH/unplugged-retreat/Assets/unpluggedlogo.png" alt="unplugged logo"></a>
+        <figure>
+          <a href="#">
+            <img src="/Users/laurennicotera/SKILLCRUSH/unplugged-retreat/img/unpluggedlogo.png" alt="unplugged logo"></a>
+          </figure>
+              
         <div class="header-divider"></div>
         <nav>
           <ul>
@@ -46,30 +50,30 @@
 
   <main>
     <div class="hero-area">      
-      <section class="header-image">
+      <!---<section class="header-image"> -unneccessary section-->
         <div class="content-wrapper">
-          <!---<img src="Assets/jake-melara-30679-unsplash.jpg" alt="Woman hiking in the forrest"/>--->
           <h1>Retreat from the desk, return refreshed.</h1>
         </div> 
-      </section>
   
-      <section class="form">
-        <div class="content-wrapper">
+      <!--<section class="form"> unneccessary section, move aside above div class-->
+        
           <aside> <!-----ITINTERARY DOWNLOAD INPUT-->
-           <h3>Want to join the next retreat?</h3>
-            <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
-          </aside>      
-          <div class="form-input">
-            <h3>Find out more</h3>
-            <input type="text" name="name" value="email address">
-            <input type="button" value="Download Itinerary">
-          </div>    
-        </div>  
-      </section>
+            <div class="content-wrapper">
+              <div class="form-description"> <!-- solution add-->
+              <h3>Want to join the next retreat?</h3>
+                <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
+              </div>  
+              <div class="form"> <!-- form and not form-input-->
+                <h3>Find out more</h3>
+                  <input type="text" name="name" value="email address">
+                  <input type="button" value="Download Itinerary">
+              </div>    
+            </div>  
+          </aside>  
+      
 
       <section class="features">
         <div class="content-wrapper">
-          <!----- <img src="Assets/rawpixel-800820-unsplash1.jpg"> alt="coworkers having a meal together"/>---->
           <h2>Have the work week you always dreamed of - without the bad wifi.</h2>
           <div class="features-amenities">
           <article>
@@ -115,18 +119,20 @@
 
     <section class="previous-retreats"> <!-----REVIEWS----->
       <div class="content-wrapper">
+        <h2>Be a better team in 5 days, like these.</h2>
         <article>
-          <h2>Be a better team in 5 days, like these.</h2>
-          <!---<img src="Assets/omar-lopez-296944-unsplash.jpg" alt="coworkers posing together after their retreat"/>--->
-        </article>
-        <article class="review">
+          <figure>
+            <img src="Assets/omar-lopez-296944-unsplash.jpg" alt="coworkers posing together after their retreat"/>
+          </figure>
+          <div class="review">
             <h3>LaCrue Bottling Co.<br>
             October 2017</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni facilis voluptatum sequi, doloribus quas, 
             rerum id nemo quo, suscipit aliquam odio explicabo incidunt. Delectus animi dolorum earum officiis perspiciatis. 
             Explicabo?
             </p>  
-          </article>  
+          </div>
+        </article>    
       </div>
     </section>
 
