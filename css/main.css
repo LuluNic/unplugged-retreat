@@ -255,8 +255,7 @@ footer .contact {
 
 footer .social-icons {
   display: flex;
-  justify-content: center; /* space around not center */
-  flex-flow: row wrap; /* solution =  no FF */
+  justify-content: space-between; 
   align-items: center;
 }
 
@@ -264,6 +263,16 @@ footer .social p {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+footer .social i {
+  font-size: 1.125em;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  background-color: #527158;
 }
 
 footer .copyright {
