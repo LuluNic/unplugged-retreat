@@ -382,6 +382,11 @@ input[type=button] {
   text-align: center; /* intially included above*/
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 /*---------Mobile Homepage - Previous Reatreats AKA Reviews ------*/
 
 .previous-retreats {
@@ -443,6 +448,7 @@ input[type=button] {
   padding-bottom: 75%;
   height: 0;
   overflow: hidden;
+  margin: 0;
 }
 
 .map iframe {
