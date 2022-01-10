@@ -291,14 +291,12 @@ footer .copyright {
   background-position: center;
   flex-flow: row wrap;
   min-height: 500px;
-  /*background-attachment: fixed; /* image wasn't centering as per comp */
-  } 
+}
 
-/*.hero-area .content-wrapper {
-  margin: 50px 20px 50px 20px; /* not part of solution code 
-  } !!!****DOUBLE CHECK AGAINST MOBILE - MESSING UP TABLET****!!! */
+.header-image .content-wrapper {
+  margin: 50px 20px;
+}
 
-/* solution add - had mine above with universal */
 .hero-area h1 {
   font-size: 2.25em;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -316,8 +314,12 @@ aside {
   flex-flow: row wrap;
 }
 
+aside .form-description {
+  margin: 30px 20px 20px 20px;
+}
+
 aside .form {
-  margin-top: 30px; /* solution add*/  
+  margin: 20px 20px 50px 20px;
 }
 
 aside h3 {
