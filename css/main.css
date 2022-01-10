@@ -407,6 +407,7 @@ input[type=button] {
   /* flex-flow: row wrap; solution add*/
   background-color: #2a423a;
   /*background-size: cover;*/
+  min-height: 610px;
 }
 
 .previous-retreats .content-wrapper {
@@ -804,9 +805,6 @@ input[type=button] {
   /*--- Reviews ---*/
  /* reviews = previous-retreats */
 
- .previous-retreats {
-   max-height: 500px;
- }
 
  .previous-retreats .content-wrapper {
   margin: 100px 64px;
